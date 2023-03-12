@@ -17,20 +17,21 @@ function setup() {
 function draw() {
   background(255,255,255);  
   drawSprites();
+  
+  if(keyDown("up"));{
+  player.y = player.y - 5
 }
 
-if(keyIsDown("UP_ARROW"));{
-  player.y += 5
+if(keyIsDown("down"));{
+  player.y = player.y +5
 }
 
-if(keyIsDown("DOWN_ARROW"));{
-  player.y -= 5
+if(keyIsDown("left"));{
+  player.x = player.x  -5
 }
 
-if(keyIsDown("LEFT_ARROW"));{
-  player.x -=  5
+if(keyIsDown("right"));{
+  player.x = player.x +5
+}
 }
 
-if(keyIsDown("RIGHT_ARROW"));{
-  player.x +=  5
-}
